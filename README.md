@@ -1,6 +1,6 @@
 # Django-starter-with-models
 
-### This basic starter for django I have gone through the steps f creating a project and app for future reference. This is a django application for saving employee information and rendering it to the webpage.
+### This basic starter for django I have gone through the steps of creating a project and app for future reference. This is a django application for saving employee information and rendering it to the webpage.
 
 ## Pre-requisites:
 
@@ -31,9 +31,9 @@ python3 manage.py runserver
 ➜ django-admin startapp employees
 ```
 
-### ❗️ In the whole doc I will be referring **employee_site** as **site** and **employees** as **app**
+-❗️ In the whole doc I will be referring **employee_site** as **site** and **employees** as **app**
 
-### ❗️ In the shell commands I have used **python3** since I have a linux OS. If you are using windows use **python** instead of **python3**
+-❗️ In the shell commands I have used **python3** since I have a linux OS. If you are using windows use **python** instead of **python3**
 
 <br/>
 
