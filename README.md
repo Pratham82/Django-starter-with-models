@@ -15,7 +15,7 @@ python3 manage.py runserver
 
 <br/>
 
-# Steps:
+# Steps for creating the same app:
 
 ## 1. Creating new site
 
