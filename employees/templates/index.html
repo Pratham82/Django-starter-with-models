@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Employees page</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<style>
+		body {
+			font-family: "Baloo Tamma 2", cursive;
+			background-color: rgb(241, 241, 241);
+		}
+		.container-style {
+			padding: 20px 15px;
+			/* border: 1px solid black; */
+			border-radius: 5px;
+			margin: 1px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0 auto;
+		}
+
+		.emp-card {
+			padding: 5px 15px;
+			/* border: 1px solid; */
+			width: 300px;
+			height: 280px;
+			border-radius: 5px;
+			margin: 10px;
+			background-color: rgb(105, 155, 248);
+			color: white;
+			-webkit-box-shadow: 0px 0px 32px -14px rgba(64, 166, 235, 1);
+			-moz-box-shadow: 0px 0px 32px -14px rgba(64, 166, 235, 1);
+			box-shadow: 0px 0px 32px -14px rgba(64, 166, 235, 1);
+		}
+		.emp-card > p {
+			font-size: 22px;
+		}
+	</style>
+	<body>
+		<br />
+
+		<h1
+			style="
+				text-align: center;
+				color: rgb(105, 155, 248);
+				font-size: 45px;
+			"
+		>
+			Employees DB
+		</h1>
+
+		<div class="container-style">
+			{% for emp in data%}
+			<div class="emp-card">
+				<p class="id"><b>ID:</b> {{emp.id}}</p>
+				<p class="name">
+					<b>Name:</b> {{emp.firstName}} {{emp.lastName}}
+				</p>
+				<p class="dept"><b>Dept:</b> {{emp.dept}}</p>
+				<p class="salary"><b>Salary:</b> $ {{emp.salary}}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>
