@@ -1,3 +1,20 @@
+# Django-starter-with-models
+
+### This basic starter for django I have gone through the steps f creating a project and app for future reference. This is a django application for saving employee information and rendering it to the webpage.
+
+## Pre-requisites:
+
+-   Python
+-   Django
+
+## For running the app:
+
+```
+python3 manage.py runserver
+```
+
+<br/>
+
 # Steps:
 
 ## 1. Creating new site
@@ -16,6 +33,8 @@
 
 ### ❗️ In the whole doc I will be referring **employee_site** as **site** and **employees** as **app**
 
+### ❗️ In the shell commands I have used **python3** since I have a linux OS. If you are using windows use **python** instead of **python3**
+
 <br/>
 
 ## 3. Creating new view
@@ -33,7 +52,7 @@ def employees_page(request):
    return HttpResponse('Hello World')
 ```
 
-4. Add the url for view in **_urls.py_**
+4. Add the url for view in **urls.py**
 
 ```python
 from django.urls import path
@@ -105,7 +124,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-1. Go to terminal and update the migrations and migrate. Make sure you are in the same directory as **manage.py**
+5. Go to terminal and update the migrations and migrate. Make sure you are in the same directory as **manage.py**
 
 ```
 ➜ python3 manage.py makemigrations
@@ -138,6 +157,7 @@ http://localhost:8000/admin
 ```
 
 <br/>
+
 ## 6. Registering the models
 
 1. In order to use the models we have to register it
