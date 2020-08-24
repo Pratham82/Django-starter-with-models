@@ -31,9 +31,10 @@ python3 manage.py runserver
 ➜ django-admin startapp employees
 ```
 
--❗️ In the whole doc I will be referring **employee_site** as **site** and **employees** as **app**
 
--❗️ In the shell commands I have used **python3** since I have a linux OS. If you are using windows use **python** instead of **python3**
+- ❗️ In the whole doc I will be referring **employee_site** as **site** and **employees** as **app**
+
+- ❗️ In the shell commands I have used **python3** since I have a linux OS. If you are using windows use **python** instead of **python3**
 
 <br/>
 
